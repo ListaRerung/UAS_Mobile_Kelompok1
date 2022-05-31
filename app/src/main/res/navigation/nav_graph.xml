@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eyebrowListFragment">
+
+    <fragment
+        android:id="@+id/eyebrowListFragment"
+        android:name="com.kelompok1.uasmobile.ui.EyebrowListFragment"
+        android:label="EyebrowListFragment" >
+        <action
+            android:id="@+id/action_eyebrowListFragment_to_eyebrowDetailFragment2"
+            app:destination="@id/eyebrowDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/eyebrowDetailFragment2"
+        android:name="com.kelompok1.uasmobile.ui.EyebrowDetailFragment"
+        android:label="EyebrowDetailFragment" >
+    <action
+        android:id="@+id/action_eyebrowDetailFragment_to_eyebrowListFragment"
+        app:destination="@id/eyebrowListFragment" />
+    </fragment>
+</navigation>
