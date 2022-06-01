@@ -1,6 +1,5 @@
 package com.kelompok1.uasmobile.network
 
-
 import com.squareup.moshi.Json
 
 data class Eyebrow(
