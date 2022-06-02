@@ -9,7 +9,6 @@ class MainActivity : AppCompatActivity() {
     private val viewmodel: MakeUpViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewmodel.getDataEyebrow()
         setContentView(R.layout.activity_main)
     }
 }

@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.kelompok1.uasmobile.R
 import com.kelompok1.uasmobile.databinding.FragmentEyebrowListBinding
 
-class EyebrowListFragment: Fragment() {
+class EyebrowListFragment : Fragment() {
     private val MakeUpViewModel: MakeUpViewModel by activityViewModels()
 
     override fun onCreateView(

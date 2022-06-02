@@ -30,11 +30,10 @@ class MakeUpViewModel: ViewModel() {
     fun getDataEyebrow(){
         viewModelScope.launch {
             try {
-//                _listeyebrow.value = MakeUpApi.retrofitServiceApi.etDataEyebrow("https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyebrow")
-                _listeyebrow.value = MakeUpApi.retrofitServiceApi.getDataEyebrow("eyebrow")
+                _listeyebrow.value = MakeUpApi.retrofitServiceApi.getDataEyebrow("https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyebrow")
                 Log.d("berhasil", _listeyebrow.value.toString())
             } catch (e: Exception){
-                Log.d("error", e.printStackTrace().toString())
+                Log.d("error", e.stackTraceToString())
             }
         }
     }

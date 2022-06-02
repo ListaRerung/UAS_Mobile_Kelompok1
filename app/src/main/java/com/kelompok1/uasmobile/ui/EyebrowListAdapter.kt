@@ -46,5 +46,5 @@ class EyebrowListAdapter(private val clickListener: EyebrowListener) :
 }
 
 class EyebrowListener(val clickListener: (eyebrow: Eyebrow) -> Unit){
-    fun onClickk(eyebrow: Eyebrow) = clickListener(eyebrow)
+    fun onClick(eyebrow: Eyebrow) = clickListener(eyebrow)
 }

@@ -20,11 +20,8 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 interface MakeUpApiService{
-    @GET("product.json")
-    suspend fun getDataEyebrow(@Query("product_type") kategori: String) : List<Eyebrow>
-
     @GET
-    suspend fun etDataEyebrow(@Url kategori: String) : List<Eyebrow>
+    suspend fun getDataEyebrow(@Url url: String) : List<Eyebrow>
     @GET("product.json")
     suspend fun getDataEyeliner(@Query("product_type") kategori: String) : List<eyeliner>
     @GET("product.json")
