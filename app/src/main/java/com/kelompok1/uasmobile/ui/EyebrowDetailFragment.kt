@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.kelompok1.uasmobile.databinding.FragmentEyebrowDetailBinding
+import com.kelompok1.uasmobile.network.Eyebrow
 
 class EyebrowDetailFragment : Fragment() {
     private val viewModel: MakeUpViewModel by activityViewModels()
