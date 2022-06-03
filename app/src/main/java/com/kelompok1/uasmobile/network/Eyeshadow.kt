@@ -2,7 +2,7 @@ package com.kelompok1.uasmobile.network
 
 import com.squareup.moshi.Json
 
-    data class eyeshadow(
+    data class Eyeshadow(
         @Json(name = "api_featured_image")
         val apiFeaturedImage: String,
         @Json(name = "brand")

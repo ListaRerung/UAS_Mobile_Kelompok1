@@ -21,11 +21,11 @@ class MakeUpViewModel: ViewModel() {
     private val _eyeliner = MutableLiveData<Eyeliner>()
     val eyeliner: LiveData<Eyeliner> = _eyeliner
 
-    private val _listeyeshadow = MutableLiveData<List<eyeshadow>>()
-    val listeyeshadow: LiveData<List<eyeshadow>> = _listeyeshadow
+    private val _listeyeshadow = MutableLiveData<List<Eyeshadow>>()
+    val listeyeshadow: LiveData<List<Eyeshadow>> = _listeyeshadow
 
-    private val _eyeshadow = MutableLiveData<eyeshadow>()
-    val eyeshadow: LiveData<eyeshadow> = _eyeshadow
+    private val _eyeshadow = MutableLiveData<Eyeshadow>()
+    val Eyeshadow: LiveData<Eyeshadow> = _eyeshadow
 
     fun getDataEyebrow(){
         viewModelScope.launch {
@@ -46,10 +46,11 @@ class MakeUpViewModel: ViewModel() {
             }
         }
     }
-    fun getEyeshadow(){
+    fun geDatatEyeshadow(){
         viewModelScope.launch {
             try {
-                _listeyeshadow.value = MakeUpApi.retrofitServiceApi.getDataEyeshadow("eyeshadow")
+                _listeyeshadow.value = MakeUpApi.retrofitServiceApi.getDataEyeshadow("https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeshadow")
+                Log.d("berhasil", _listeyebrow.value.toString())
             } catch (e: Exception){
                 Log.d("error", e.printStackTrace().toString())
             }
@@ -61,7 +62,7 @@ class MakeUpViewModel: ViewModel() {
     fun onEyelinerClicked(eyeliner: Eyeliner){
         _eyeliner.value = eyeliner
     }
-    fun onEyeshadowClicked(eyeshadow: eyeshadow){
-        _eyeshadow.value = eyeshadow
+    fun onEyeshadowClicked(Eyeshadow: Eyeshadow){
+        _eyeshadow.value = Eyeshadow
     }
 }
