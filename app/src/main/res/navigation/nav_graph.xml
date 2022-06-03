@@ -21,6 +21,7 @@
         android:id="@+id/action_eyebrowDetailFragment_to_eyebrowListFragment"
         app:destination="@id/eyebrowListFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/eyelinerDetailFragment"
         android:name="com.kelompok1.uasmobile.ui.EyelinerDetailFragment"
@@ -37,4 +38,6 @@
             android:id="@+id/action_eyelinerListFragment_to_eyelinerDetailFragment"
             app:destination="@id/eyelinerDetailFragment" />
     </fragment>
+
+
 </navigation>
