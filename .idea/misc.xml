@@ -13,6 +13,9 @@
         <entry key="..\:/ULM/Pemrograman Mobile/UAS/UAS_Mobile_Kelompok1/app/src/main/res/layout/list_view_item.xml" value="0.1" />
         <entry key="..\:/ULM/Pemrograman Mobile/UAS/UAS_Mobile_Kelompok1/app/src/main/res/layout/list_view_item_eyebrow.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/GF65/AndroidStudioProjects/UAS_Mobile_Kelompok1/app/src/main/res/layout/fragment_eyebrow_detail.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/GF65/AndroidStudioProjects/UAS_Mobile_Kelompok1/app/src/main/res/layout/fragment_eyeshadow_detail.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/GF65/AndroidStudioProjects/UAS_Mobile_Kelompok1/app/src/main/res/layout/fragment_eyeshadow_list.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/GF65/AndroidStudioProjects/UAS_Mobile_Kelompok1/app/src/main/res/layout/list_view_item_eyeshadow.xml" value="0.23143115942028986" />
       </map>
     </option>
   </component>
