@@ -2,43 +2,43 @@ package com.kelompok1.uasmobile.network
 
 import com.squareup.moshi.Json
 
-    data class eyeliner(
+    data class Eyeliner(
         @Json(name = "api_featured_image")
-        val apiFeaturedImage: String,
+        val apiFeaturedImage: String?,
         @Json(name = "brand")
-        val brand: String,
+        val brand: String?,
         @Json(name = "category")
-        val category: String,
+        val category: String?,
         @Json(name = "created_at")
-        val createdAt: String,
+        val createdAt: String?,
         @Json(name = "currency")
-        val currency: String,
+        val currency: String?,
         @Json(name = "description")
-        val description: String,
+        val description: String?,
         @Json(name = "id")
         val id: Int,
         @Json(name = "image_link")
-        val imageLink: String,
+        val imageLink: String?,
         @Json(name = "name")
         val name: String,
         @Json(name = "price")
-        val price: String,
+        val price: String?,
         @Json(name = "price_sign")
-        val priceSign: String,
+        val priceSign: String?,
         @Json(name = "product_api_url")
-        val productApiUrl: String,
+        val productApiUrl: String?,
         @Json(name = "product_colors")
-        val productColors: List<Any>,
+        val productColors: List<Any>?,
         @Json(name = "product_link")
-        val productLink: String,
+        val productLink: String?,
         @Json(name = "product_type")
-        val productType: String,
+        val productType: String?,
         @Json(name = "rating")
-        val rating: Double,
+        val rating: Any?,
         @Json(name = "tag_list")
-        val tagList: List<Any>,
+        val tagList: List<Any>?,
         @Json(name = "updated_at")
-        val updatedAt: String,
+        val updatedAt: String?,
         @Json(name = "website_link")
-        val websiteLink: String
+        val websiteLink: String?
     )

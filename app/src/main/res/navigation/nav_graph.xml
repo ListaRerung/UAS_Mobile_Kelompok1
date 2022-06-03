@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/eyebrowListFragment">
+    app:startDestination="@id/eyelinerListFragment">
 
     <fragment
         android:id="@+id/eyebrowListFragment"
@@ -20,5 +20,21 @@
     <action
         android:id="@+id/action_eyebrowDetailFragment_to_eyebrowListFragment"
         app:destination="@id/eyebrowListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eyelinerDetailFragment"
+        android:name="com.kelompok1.uasmobile.ui.EyelinerDetailFragment"
+        android:label="EyelinerDetailFragment" >
+        <action
+            android:id="@+id/action_eyelinerDetailFragment_to_eyelinerListFragment"
+            app:destination="@id/eyelinerListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eyelinerListFragment"
+        android:name="com.kelompok1.uasmobile.ui.EyelinerListFragment"
+        android:label="EyelinerListFragment" >
+        <action
+            android:id="@+id/action_eyelinerListFragment_to_eyelinerDetailFragment"
+            app:destination="@id/eyelinerDetailFragment" />
     </fragment>
 </navigation>
