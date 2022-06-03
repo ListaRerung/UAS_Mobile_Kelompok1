@@ -39,5 +39,20 @@
             app:destination="@id/eyelinerDetailFragment" />
     </fragment>
 
-
+    <fragment
+        android:id="@+id/eyeshadowListFragment"
+        android:name="com.kelompok1.uasmobile.ui.EyeshadowListFragment"
+        android:label="EyeshadowListFragment" >
+        <action
+            android:id="@+id/action_eyeshadowListFragment_to_eyeshadowDetailFragment2"
+            app:destination="@id/eyeshadowDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/eyeshadowDetailFragment2"
+        android:name="com.kelompok1.uasmobile.ui.EyeshadowDetailFragment"
+        android:label="EyeshadowDetailFragment" >
+        <action
+            android:id="@+id/action_eyeshadowDetailFragment_to_eyeshadowListFragment"
+            app:destination="@id/eyeshadowListFragment" />
+    </fragment>
 </navigation>
