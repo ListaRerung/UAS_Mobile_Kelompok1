@@ -19,7 +19,7 @@ class EyebrowDetailFragment : Fragment() {
     ): View? {
         val binding = FragmentEyebrowDetailBinding.inflate(inflater)
         binding.lifecycleOwner = this
-        binding.viewModel = viewModel
+        binding.viewModelEyebrow = viewModel
         return binding.root
     }
 }

@@ -21,7 +21,7 @@ class EyebrowListFragment : Fragment() {
         val binding = FragmentEyebrowListBinding.inflate(inflater)
         MakeUpViewModel.getDataEyebrow()
         binding.lifecycleOwner = this
-        binding.data = MakeUpViewModel
+        binding.dataEyebrow = MakeUpViewModel
         binding.recyclerView.adapter = EyebrowListAdapter(EyebrowListener { eyebrow ->
             MakeUpViewModel.onEyebrowClicked(eyebrow)
             findNavController()
