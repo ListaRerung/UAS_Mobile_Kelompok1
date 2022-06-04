@@ -5,7 +5,7 @@
 
     <data>
         <variable
-            name="viewModel"
+            name="viewModelEyebrow"
             type="com.kelompok1.uasmobile.ui.MakeUpViewModel" />
     </data>
 
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="@{`Id : `+ Integer.toString(viewModel.eyebrow.id)}"
+            android:text="@{`Id : `+ Integer.toString(viewModelEyebrow.eyebrow.id)}"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="@{`Name : ` + viewModel.eyebrow.name}"
+            android:text="@{`Name : ` + viewModelEyebrow.eyebrow.name}"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/id" />
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="@{`Brand : `+ viewModel.eyebrow.brand}"
+            android:text="@{`Brand : `+ viewModelEyebrow.eyebrow.brand}"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title" />
@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="@{`Descripsion : ` + viewModel.eyebrow.description}"
+            android:text="@{`Descripsion : ` + viewModelEyebrow.eyebrow.description}"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/brand" />

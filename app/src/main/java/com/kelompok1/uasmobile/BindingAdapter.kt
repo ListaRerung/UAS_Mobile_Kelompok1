@@ -9,7 +9,7 @@ import com.kelompok1.uasmobile.ui.EyebrowListAdapter
 import com.kelompok1.uasmobile.ui.EyelinerListAdapter
 import com.kelompok1.uasmobile.ui.EyeshadowListAdapter
 
-@BindingAdapter("listData")
+@BindingAdapter("listDataEyebrow")
 fun bindRecyclerView(recyclerView: RecyclerView, data: List<Eyebrow>?) {
     val adapter = recyclerView.adapter as EyebrowListAdapter
     adapter.submitList(data)

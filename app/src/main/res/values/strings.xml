@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">UasMobile</string>
+    <string name="app_name">EyeMakeup</string>
 
     <string name="nav_header_desc">Navigation header</string>
     <string name="nav_header_title">Eye Makeup Product</string>
@@ -9,5 +9,5 @@
     <string name="menu_eyeliner">Eyeliner</string>
     <string name="menu_eyeshadow">Eyeshadow</string>
     <string name="menu_home">Home</string>
-    <string name="welcome">Welcome to Eye Makeup Product</string>
+    <string name="welcome">Welcome</string>
 </resources>

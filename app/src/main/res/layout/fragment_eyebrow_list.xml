@@ -6,7 +6,7 @@
 
     <data>
         <variable
-            name="data"
+            name="dataEyebrow"
             type="com.kelompok1.uasmobile.ui.MakeUpViewModel" />
     </data>
 
@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            app:listData="@{data.listeyebrow}"
+            app:listDataEyebrow="@{dataEyebrow.listeyebrow}"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
