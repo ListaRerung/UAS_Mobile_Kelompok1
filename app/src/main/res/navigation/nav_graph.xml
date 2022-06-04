@@ -3,57 +3,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/eyeshadowListFragment">
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.kelompok1.uasmobile.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/eyebrowListFragment"
         android:name="com.kelompok1.uasmobile.ui.EyebrowListFragment"
-        android:label="EyebrowListFragment" >
+        android:label="Eyebrow"
+        tools:layout="@layout/fragment_eyebrow_list">
         <action
-            android:id="@+id/action_eyebrowListFragment_to_eyebrowDetailFragment2"
-            app:destination="@id/eyebrowDetailFragment2" />
-    </fragment>
-    <fragment
-        android:id="@+id/eyebrowDetailFragment2"
-        android:name="com.kelompok1.uasmobile.ui.EyebrowDetailFragment"
-        android:label="EyebrowDetailFragment" >
-    <action
-        android:id="@+id/action_eyebrowDetailFragment_to_eyebrowListFragment"
-        app:destination="@id/eyebrowListFragment" />
+            android:id="@+id/action_eyebrowListFragment_to_eyebrowDetailFragment"
+            app:destination="@id/eyebrowDetailFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/eyelinerDetailFragment"
-        android:name="com.kelompok1.uasmobile.ui.EyelinerDetailFragment"
-        android:label="EyelinerDetailFragment" >
-        <action
-            android:id="@+id/action_eyelinerDetailFragment_to_eyelinerListFragment"
-            app:destination="@id/eyelinerListFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/eyelinerListFragment"
         android:name="com.kelompok1.uasmobile.ui.EyelinerListFragment"
-        android:label="EyelinerListFragment" >
+        android:label="Eyeliner"
+        tools:layout="@layout/fragment_eyeliner_list">
         <action
             android:id="@+id/action_eyelinerListFragment_to_eyelinerDetailFragment"
             app:destination="@id/eyelinerDetailFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/eyeshadowListFragment"
         android:name="com.kelompok1.uasmobile.ui.EyeshadowListFragment"
-        android:label="EyeshadowListFragment" >
+        android:label="Eyeshadow"
+        tools:layout="@layout/fragment_eyeshadow_list">
         <action
             android:id="@+id/action_eyeshadowListFragment_to_eyeshadowDetailFragment"
             app:destination="@id/eyeshadowDetailFragment" />
     </fragment>
     <fragment
+        android:id="@+id/eyebrowDetailFragment"
+        android:name="com.kelompok1.uasmobile.ui.EyebrowDetailFragment"
+        android:label="Detail Eyebrow" >
+        <action
+            android:id="@+id/action_eyebrowDetailFragment_to_eyebrowListFragment"
+            app:destination="@id/eyebrowListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eyelinerDetailFragment"
+        android:name="com.kelompok1.uasmobile.ui.EyelinerDetailFragment"
+        android:label="Detail Eyeliner" >
+        <action
+            android:id="@+id/action_eyelinerDetailFragment_to_eyelinerListFragment"
+            app:destination="@id/eyelinerListFragment" />
+    </fragment>
+    <fragment
         android:id="@+id/eyeshadowDetailFragment"
         android:name="com.kelompok1.uasmobile.ui.EyeshadowDetailFragment"
-        android:label="EyeshadowDetailFragment" >
+        android:label="Detail Eyeshadow" >
         <action
             android:id="@+id/action_eyeshadowDetailFragment_to_eyeshadowListFragment"
             app:destination="@id/eyeshadowListFragment" />
     </fragment>
-
-
 </navigation>

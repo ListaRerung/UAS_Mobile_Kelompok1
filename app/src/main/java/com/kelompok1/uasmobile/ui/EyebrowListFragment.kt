@@ -25,7 +25,7 @@ class EyebrowListFragment : Fragment() {
         binding.recyclerView.adapter = EyebrowListAdapter(EyebrowListener { eyebrow ->
             MakeUpViewModel.onEyebrowClicked(eyebrow)
             findNavController()
-                .navigate(R.id.action_eyebrowListFragment_to_eyebrowDetailFragment2)
+                .navigate(R.id.action_eyebrowListFragment_to_eyebrowDetailFragment)
         })
         return binding.root
     }
