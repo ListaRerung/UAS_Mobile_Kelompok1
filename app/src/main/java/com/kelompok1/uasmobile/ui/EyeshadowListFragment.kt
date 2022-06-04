@@ -20,11 +20,11 @@ class EyeshadowListFragment : Fragment() {
         val binding = FragmentEyeshadowListBinding.inflate(inflater)
         MakeUpViewModel.getDataEyeshadow()
         binding.lifecycleOwner = this
-        binding.data = MakeUpViewModel
+        binding.dataEyeshadow = MakeUpViewModel
         binding.recyclerView.adapter = EyeshadowListAdapter(EyeshadowListener { eyeshadow ->
             MakeUpViewModel.onEyeshadowClicked(eyeshadow)
             findNavController()
-                .navigate(R.id.action_eyeshadowListFragment_to_eyeshadowDetailFragment2)
+                .navigate(R.id.action_eyeshadowListFragment_to_eyeshadowDetailFragment)
         })
         return binding.root
     }
