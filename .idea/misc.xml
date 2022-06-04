@@ -12,7 +12,12 @@
         <entry key="..\:/ULM/Pemrograman Mobile/UAS/UAS_Mobile_Kelompok1/app/src/main/res/layout/fragment_eyeshadow_list.xml" value="0.1" />
         <entry key="..\:/ULM/Pemrograman Mobile/UAS/UAS_Mobile_Kelompok1/app/src/main/res/layout/list_view_item.xml" value="0.1" />
         <entry key="..\:/ULM/Pemrograman Mobile/UAS/UAS_Mobile_Kelompok1/app/src/main/res/layout/list_view_item_eyebrow.xml" value="0.25416666666666665" />
+<<<<<<< HEAD
         <entry key="..\:/ULM/Pemrograman Mobile/UAS/UAS_Mobile_Kelompok1/app/src/main/res/layout/list_view_item_eyeshadow.xml" value="0.25416666666666665" />
+=======
+        <entry key="..\:/Users/GF65/AndroidStudioProjects/UAS_Mobile_Kelompok1/app/src/main/res/layout/fragment_eyeliner_detail.xml" value="0.1" />
+        <entry key="..\:/Users/GF65/AndroidStudioProjects/UAS_Mobile_Kelompok1/app/src/main/res/layout/list_view_item_eyeliner.xml" value="0.1" />
+>>>>>>> f3e4a43e7def8f73334215fc57c22b36c752cf6f
       </map>
     </option>
   </component>

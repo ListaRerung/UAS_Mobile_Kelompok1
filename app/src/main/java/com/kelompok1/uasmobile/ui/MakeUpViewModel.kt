@@ -46,13 +46,13 @@ class MakeUpViewModel: ViewModel() {
             }
         }
     }
-    fun geDatatEyeshadow(){
+    fun getDataEyeshadow(){
         viewModelScope.launch {
             try {
                 _listeyeshadow.value = MakeUpApi.retrofitServiceApi.getDataEyeshadow("https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeshadow")
-                Log.d("berhasil", _listeyebrow.value.toString())
+                Log.d("berhasil", _listeyeshadow.value.toString())
             } catch (e: Exception){
-                Log.d("error", e.printStackTrace().toString())
+                Log.d("error", e.stackTraceToString())
             }
         }
     }
@@ -62,7 +62,7 @@ class MakeUpViewModel: ViewModel() {
     fun onEyelinerClicked(eyeliner: Eyeliner){
         _eyeliner.value = eyeliner
     }
-    fun onEyeshadowClicked(Eyeshadow: Eyeshadow){
-        _eyeshadow.value = Eyeshadow
+    fun onEyeshadowClicked(eyeshadow: Eyeshadow){
+        _eyeshadow.value = eyeshadow
     }
 }
