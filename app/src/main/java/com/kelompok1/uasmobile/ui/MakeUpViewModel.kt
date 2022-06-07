@@ -5,10 +5,13 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.kelompok1.uasmobile.MakeUpRepository
 import com.kelompok1.uasmobile.network.*
 import kotlinx.coroutines.launch
 
 class MakeUpViewModel: ViewModel() {
+    private val MakeUpRepository = MakeUpRepository()
+
     private val _listeyebrow = MutableLiveData<List<Eyebrow>>()
     val listeyebrow: LiveData<List<Eyebrow>> = _listeyebrow
 
@@ -30,7 +33,7 @@ class MakeUpViewModel: ViewModel() {
     fun getDataEyebrow(){
         viewModelScope.launch {
             try {
-                _listeyebrow.value = MakeUpApi.retrofitServiceApi.getDataEyebrow("https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyebrow")
+                _listeyebrow.value = MakeUpRepository.getDataEyebrow()
                 Log.d("berhasil", _listeyebrow.value.toString())
             } catch (e: Exception){
                 Log.d("error", e.stackTraceToString())
@@ -40,7 +43,7 @@ class MakeUpViewModel: ViewModel() {
     fun getDataEyeliner(){
         viewModelScope.launch {
             try {
-                _listeyeliner.value = MakeUpApi.retrofitServiceApi.getDataEyeliner("https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner")
+                _listeyeliner.value = MakeUpRepository.getDataEyeliner()
             } catch (e: Exception){
                 Log.d("error", e.printStackTrace().toString())
             }
@@ -49,7 +52,7 @@ class MakeUpViewModel: ViewModel() {
     fun getDataEyeshadow(){
         viewModelScope.launch {
             try {
-                _listeyeshadow.value = MakeUpApi.retrofitServiceApi.getDataEyeshadow("https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeshadow")
+                _listeyeshadow.value = MakeUpRepository.getDataEyeshadow()
                 Log.d("berhasil", _listeyeshadow.value.toString())
             } catch (e: Exception){
                 Log.d("error", e.stackTraceToString())

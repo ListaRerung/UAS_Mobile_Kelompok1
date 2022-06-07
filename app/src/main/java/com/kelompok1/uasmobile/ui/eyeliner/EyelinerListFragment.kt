@@ -1,4 +1,4 @@
-package com.kelompok1.uasmobile.ui
+package com.kelompok1.uasmobile.ui.eyeliner
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,9 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.kelompok1.uasmobile.R
 import com.kelompok1.uasmobile.databinding.FragmentEyelinerListBinding
+import com.kelompok1.uasmobile.ui.eyeliner.EyelinerListAdapter
+import com.kelompok1.uasmobile.ui.eyeliner.EyelinerListener
+import com.kelompok1.uasmobile.ui.MakeUpViewModel
 
 class EyelinerListFragment : Fragment() {
     private val MakeUpViewModel: MakeUpViewModel by activityViewModels()

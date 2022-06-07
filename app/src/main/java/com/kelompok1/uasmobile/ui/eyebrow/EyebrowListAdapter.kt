@@ -1,4 +1,4 @@
-package com.kelompok1.uasmobile.ui
+package com.kelompok1.uasmobile.ui.eyebrow
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

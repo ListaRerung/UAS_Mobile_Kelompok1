@@ -1,15 +1,15 @@
-package com.kelompok1.uasmobile.ui
+package com.kelompok1.uasmobile.ui.eyeliner
 
 import android.os.Bundle
+import com.kelompok1.uasmobile.databinding.FragmentEyelinerDetailBinding
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import com.kelompok1.uasmobile.databinding.FragmentEyebrowDetailBinding
-import com.kelompok1.uasmobile.network.Eyebrow
+import com.kelompok1.uasmobile.ui.MakeUpViewModel
 
-class EyebrowDetailFragment : Fragment() {
+class EyelinerDetailFragment : Fragment() {
     private val viewModel: MakeUpViewModel by activityViewModels()
 
     override fun onCreateView(
@@ -17,9 +17,9 @@ class EyebrowDetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentEyebrowDetailBinding.inflate(inflater)
+        val binding = FragmentEyelinerDetailBinding.inflate(inflater)
         binding.lifecycleOwner = this
-        binding.viewModelEyebrow = viewModel
+        binding.viewModelEyeliner = viewModel
         return binding.root
     }
 }

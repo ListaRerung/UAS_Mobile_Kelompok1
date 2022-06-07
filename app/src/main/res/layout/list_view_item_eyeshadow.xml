@@ -8,7 +8,7 @@
             type="com.kelompok1.uasmobile.network.Eyeshadow" />
         <variable
             name="clicklistener"
-            type="com.kelompok1.uasmobile.ui.EyeshadowListener" />
+            type="com.kelompok1.uasmobile.ui.eyeshadow.EyeshadowListener" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

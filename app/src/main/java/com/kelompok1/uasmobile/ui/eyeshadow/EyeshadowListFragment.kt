@@ -1,4 +1,4 @@
-package com.kelompok1.uasmobile.ui
+package com.kelompok1.uasmobile.ui.eyeshadow
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,9 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.kelompok1.uasmobile.databinding.FragmentEyeshadowListBinding
 import com.kelompok1.uasmobile.R
+import com.kelompok1.uasmobile.ui.eyeshadow.EyeshadowListAdapter
+import com.kelompok1.uasmobile.ui.eyeshadow.EyeshadowListener
+import com.kelompok1.uasmobile.ui.MakeUpViewModel
 
 class EyeshadowListFragment : Fragment() {
     private val MakeUpViewModel: MakeUpViewModel by activityViewModels()
