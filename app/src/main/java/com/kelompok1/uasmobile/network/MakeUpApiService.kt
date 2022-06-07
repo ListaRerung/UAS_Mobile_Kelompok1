@@ -26,13 +26,6 @@ interface MakeUpApiService{
     suspend fun getDataEyeliner(@Url url: String) : List<Eyeliner>
     @GET
     suspend fun getDataEyeshadow(@Url url: String) : List<Eyeshadow>
-//    @GET("product.json")
-//    suspend fun getDataEyeliner(@Query("product_type") kategori: String) : List<Eyeliner>
-//    @GET("product.json")
-//    suspend fun getDataEyeshadow(@Query("product_type") kategori: String) : List<Eyeshadow>
-//    @GET
-//    suspend fun getDataEyeshadow(@Url url: String): List<Eyeshadow>
-
 }
 object MakeUpApi{
     val retrofitServiceApi : MakeUpApiService by lazy {

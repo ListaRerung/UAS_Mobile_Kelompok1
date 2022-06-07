@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/eyebrowListFragment"
-        android:name="com.kelompok1.uasmobile.ui.EyebrowListFragment"
+        android:name="com.kelompok1.uasmobile.ui.eyebrow.EyebrowListFragment"
         android:label="Eyebrow"
         tools:layout="@layout/fragment_eyebrow_list">
         <action
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/eyelinerListFragment"
-        android:name="com.kelompok1.uasmobile.ui.EyelinerListFragment"
+        android:name="com.kelompok1.uasmobile.ui.eyeliner.EyelinerListFragment"
         android:label="Eyeliner"
         tools:layout="@layout/fragment_eyeliner_list">
         <action
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/eyeshadowListFragment"
-        android:name="com.kelompok1.uasmobile.ui.EyeshadowListFragment"
+        android:name="com.kelompok1.uasmobile.ui.eyeshadow.EyeshadowListFragment"
         android:label="Eyeshadow"
         tools:layout="@layout/fragment_eyeshadow_list">
         <action
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/eyebrowDetailFragment"
-        android:name="com.kelompok1.uasmobile.ui.EyebrowDetailFragment"
+        android:name="com.kelompok1.uasmobile.ui.eyebrow.EyebrowDetailFragment"
         android:label="Detail Eyebrow" >
         <action
             android:id="@+id/action_eyebrowDetailFragment_to_eyebrowListFragment"
@@ -50,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/eyelinerDetailFragment"
-        android:name="com.kelompok1.uasmobile.ui.EyelinerDetailFragment"
+        android:name="com.kelompok1.uasmobile.ui.eyeliner.EyelinerDetailFragment"
         android:label="Detail Eyeliner" >
         <action
             android:id="@+id/action_eyelinerDetailFragment_to_eyelinerListFragment"
@@ -58,7 +58,7 @@
     </fragment>
     <fragment
         android:id="@+id/eyeshadowDetailFragment"
-        android:name="com.kelompok1.uasmobile.ui.EyeshadowDetailFragment"
+        android:name="com.kelompok1.uasmobile.ui.eyeshadow.EyeshadowDetailFragment"
         android:label="Detail Eyeshadow" >
         <action
             android:id="@+id/action_eyeshadowDetailFragment_to_eyeshadowListFragment"

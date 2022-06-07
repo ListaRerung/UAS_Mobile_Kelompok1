@@ -1,4 +1,4 @@
-package com.kelompok1.uasmobile.ui
+package com.kelompok1.uasmobile.ui.eyeliner
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.ListAdapter
 import com.kelompok1.uasmobile.databinding.ListViewItemEyelinerBinding
 import com.kelompok1.uasmobile.network.Eyeliner
-
 
 class EyelinerListAdapter(private val clickListener: EyelinerListener) :
     ListAdapter<Eyeliner, EyelinerListAdapter.EyelinerViewHolder>(DiffCallback)
