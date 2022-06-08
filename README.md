@@ -6,7 +6,8 @@ Muhammad Aulia Akbar            (2010817120023)
 
 Tema MakeUp
 
-#API
+API
+
 BASE URL = https://makeup-api.herokuapp.com/api/v1/
 
 ENDPOINT EYEBROW = https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyebrow
