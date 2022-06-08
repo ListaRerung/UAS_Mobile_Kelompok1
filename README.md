@@ -10,5 +10,7 @@ Tema MakeUp
 BASE URL = https://makeup-api.herokuapp.com/api/v1/
 
 ENDPOINT EYEBROW = https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyebrow
+
 ENDPOINT EYELINER = https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner
+
 ENDPOINT EYESHADOW = https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeshadow
